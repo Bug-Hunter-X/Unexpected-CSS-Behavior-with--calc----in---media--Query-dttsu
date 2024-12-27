@@ -1,0 +1,10 @@
+The following CSS code snippet demonstrates an uncommon error related to the usage of the `calc()` function within the `@media` query. This can lead to unexpected behavior or rendering issues in different viewport sizes.  The issue stems from improper handling of units within the calculation, resulting in syntax errors.
+
+```css
+@media (max-width: calc(100vw - 100px))
+{
+  .element {
+    width: 50%;
+  }
+}
+```
