@@ -1,0 +1,20 @@
+The corrected CSS code addresses the unit inconsistency by ensuring that a consistent unit type (pixels in this case) is used throughout the `calc()` expression.
+
+```css
+@media (max-width: calc(100vw - 100px))
+{
+  .element {
+    width: 50%;
+  }
+}
+```
+
+This corrected version should work consistently.  However, using `vw` units directly within the `@media` query would often be more concise and reliable:
+
+```css
+@media (max-width: 90vw) {
+  .element {
+    width: 50%;
+  }
+}
+```
